@@ -1,5 +1,7 @@
-package me.leejinhyuk.springbootdeveloper;
+package springbootdeveloper;
 
+import me.leejinhyuk.springbootdeveloper.Member;
+import me.leejinhyuk.springbootdeveloper.MemberRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
