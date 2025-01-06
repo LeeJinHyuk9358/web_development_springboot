@@ -39,3 +39,11 @@ SELECT *
 -- users PK인 id는 회원id에 해당합니다.
 -- orders에 PK인 id는 주문id에 해당하고, 2번째 컬럼인 user_id는
 -- orders에서는 PK는 아니지만 JOIN을 수행할 때 users와 합치는 조건이 됩니다.
+
+
+
+
+
+
+
+
