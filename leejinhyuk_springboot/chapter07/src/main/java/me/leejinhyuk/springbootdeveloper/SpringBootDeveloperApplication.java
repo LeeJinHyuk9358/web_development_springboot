@@ -8,7 +8,9 @@ package me.leejinhyuk.springbootdeveloper;
  */
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
+@EnableJpaAuditing      // created_at, updated_at을 자동 업데이트해주는 애너테이션
 @SpringBootApplication
 public class SpringBootDeveloperApplication {
     public static void main(String[] args) {
@@ -50,8 +52,8 @@ public class SpringBootDeveloperApplication {
 
                 하지만 스프링 타임리프를 권장하고 있으므로 우리는 타임리프 사용 예정
 
-            탕미리프 표현식과 문법
-                타임리프의 문법은 직관적인 편인데, 자주 사용하는 표현식과 문법ㅇ느 예시로만 보여드리고,
+            타임리프 표현식과 문법
+                타임리프의 문법은 직관적인 편인데, 자주 사용하는 표현식과 문법은 예시로만 보여드리고,
                 구체적인 사용 방법은 실습으로 알아볼겁니다.
 
                 이하에서 소개하는 표현식들은 전달받은 데이터를 사용자들이 볼 수 있게
