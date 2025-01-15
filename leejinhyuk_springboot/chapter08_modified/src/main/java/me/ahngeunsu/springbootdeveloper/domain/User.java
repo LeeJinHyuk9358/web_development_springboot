@@ -1,4 +1,4 @@
-package me.leejinhyuk.springbootdeveloper.domain;
+package me.ahngeunsu.springbootdeveloper.domain;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
@@ -35,7 +35,7 @@ public class User implements UserDetails {  // UserDetails를 상속 받아 인�
         this.password = password;
     }
 
-    @Override   // 권한 반환
+    @Override  // 권한 반환
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority("user"));
     }
@@ -56,7 +56,7 @@ public class User implements UserDetails {  // UserDetails를 상속 받아 인�
     @Override
     public boolean isAccountNonExpired() {
         // 만료되었는지 확인하는 로직
-        return true;    // true 만료되지 않았다는 의미 -> NonExpired의 true
+        return true;    //  true 만료되지 않았다는 의미 / NonExpired의 true
     }
 
     // 계정 잠금 여부 반환
@@ -70,7 +70,7 @@ public class User implements UserDetails {  // UserDetails를 상속 받아 인�
     @Override
     public boolean isCredentialsNonExpired() {
         // 패스워드가 만료되었는지 확인하는 로직
-        return true;    // true -> 만료되지 않았음
+        return true; // true -> 만료되지 않았음
     }
 
     // 계정 사용 가능 여부 반환
@@ -88,4 +88,14 @@ public class User implements UserDetails {  // UserDetails를 상속 받아 인�
     즉 @Override가 들어간 코드들이 로그인 관련 코드들이고, 반 필수적이라고 생각하시면 됩니다.
 
     repository -> UserRepository.java 파일을 생성하고 interface를 만듭니다.
+
+
+
+
+
+
+
+
+
+
  */
