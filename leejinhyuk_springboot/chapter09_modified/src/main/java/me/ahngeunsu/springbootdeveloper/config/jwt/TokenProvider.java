@@ -41,7 +41,7 @@ public class TokenProvider {
                 .setSubject(user.getEmail())        // 내용 sub : 유저 이메일
                 .claim("id", user.getId())       // 클레임 id : 유저 ID
                 // 서명 : 비밀값과 함께 해시값을 HS256 방식으로 암호화
-                .signWith(SignatureAlgorithm.ES256, jwtProperties.getSecretKey())
+                .signWith(SignatureAlgorithm.HS256, jwtProperties.getSecretKey())
                 .compact();
     }
 
@@ -111,4 +111,5 @@ public class TokenProvider {
 
         다음 단계 -> 코드가 제대로 동작하는지 확인하기 위해서 테스트 코드 작성 예정
             20250116에 하겠습니다.
+
  */
