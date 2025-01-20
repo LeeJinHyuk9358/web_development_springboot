@@ -148,7 +148,7 @@ public class SpringBootDeveloperApplication {
                         Cookie: member_id = 1
 
     쿠키 관리 클래스를 구현할겁니다.
-        0Auth2 인증 플로우를 구현하면서 쿠키를 사용할 일이 생깁니다.
+        OAuth2 인증 플로우를 구현하면서 쿠키를 사용할 일이 생깁니다.
         그때마다 쿠키를 생성하고 샂게하는 로직을 추가하면 불편해서
         유틸리티로 사용할 쿠키 관리 클래스를 미리 구현
 
